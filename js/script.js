@@ -5,6 +5,6 @@ function init(){
     alert(alertVal);
  }
 var button = document.getElementById('entrybutton');
-  button.addEventListener('click', myEventFunction());
+  button.addEventListener('onclick', myEventFunction());
 }
 window.addEventListener('load', init);
