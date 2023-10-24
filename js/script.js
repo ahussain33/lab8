@@ -1,9 +1,10 @@
 function init(){
-var textField = document.getElementById('entryinput');
-  alertVal = ("Abiha Hussain:" + textField.value);
+ function myEventFunction(){
+  var textField = document.getElementById('entryinput');
+    alertVal = ("Abiha Hussain:" + textField.value);
+    alert(alertVal);
+ }
 var button = document.getElementById('entrybutton');
-var heading = document.getElementById('textoutput'); 
-  headingchange = heading.innerHTML(textField);
-  button.addEventListener('click', headingchange);
+  button.addEventListener('click', myEventFunction());
 }
 window.addEventListener('load', init);
